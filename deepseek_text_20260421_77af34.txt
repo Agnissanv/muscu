@@ -1,0 +1,8 @@
+/threesixtygym/
+│
+├── index.html          (Accueil)
+├── schedule.html       (Planning des cours)
+├── reservation.html    (Réservation / paiement)
+├── blog.html           (Blog conseils fitness)
+├── contact.html        (Contact + WhatsApp flottant)
+└── /assets/            (dossier pour images, CSS, JS – à créer)

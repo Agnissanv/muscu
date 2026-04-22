@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning – Three Sixty Gym</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><a href="index.html"><span class="logo-text">THREE SIXTY GYM</span></a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="schedule.html" class="active">Planning</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Planning des cours</h1>
+                <p>Yoga, Boxe, Cycling, Musculation guidée – toute la semaine</p>
+            </div>
+        </section>
+
+        <section class="schedule-table">
+            <div class="container">
+                <div class="schedule-filters">
+                    <button class="filter-btn active" data-day="all">Tous</button>
+                    <button class="filter-btn" data-day="lun">Lundi</button>
+                    <button class="filter-btn" data-day="mar">Mardi</button>
+                    <button class="filter-btn" data-day="mer">Mercredi</button>
+                    <button class="filter-btn" data-day="jeu">Jeudi</button>
+                    <button class="filter-btn" data-day="ven">Vendredi</button>
+                    <button class="filter-btn" data-day="sam">Samedi</button>
+                    <button class="filter-btn" data-day="dim">Dimanche</button>
+                </div>
+
+                <div class="schedule-grid">
+                    <!-- Lundi -->
+                    <div class="schedule-day" data-day="lun">
+                        <h3>Lundi</h3>
+                        <div class="course-item"><span class="time">07:00</span> <span class="name">Yoga sunrise</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">09:00</span> <span class="name">Cycling</span> <span class="coach">Marc</span></div>
+                        <div class="course-item"><span class="time">17:30</span> <span class="name">Boxe</span> <span class="coach">Chris</span></div>
+                        <div class="course-item"><span class="time">19:00</span> <span class="name">Musculation en groupe</span> <span class="coach">Sofiane</span></div>
+                    </div>
+                    <!-- Mardi -->
+                    <div class="schedule-day" data-day="mar">
+                        <h3>Mardi</h3>
+                        <div class="course-item"><span class="time">07:00</span> <span class="name">Pilates</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">12:00</span> <span class="name">Cardio HIIT</span> <span class="coach">Marc</span></div>
+                        <div class="course-item"><span class="time">18:00</span> <span class="name">Boxe</span> <span class="coach">Chris</span></div>
+                    </div>
+                    <!-- Mercredi -->
+                    <div class="schedule-day" data-day="mer">
+                        <h3>Mercredi</h3>
+                        <div class="course-item"><span class="time">07:00</span> <span class="name">Yoga flow</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">17:00</span> <span class="name">Cycling</span> <span class="coach">Marc</span></div>
+                        <div class="course-item"><span class="time">19:30</span> <span class="name">Musculation avancée</span> <span class="coach">Sofiane</span></div>
+                    </div>
+                    <!-- Jeudi -->
+                    <div class="schedule-day" data-day="jeu">
+                        <h3>Jeudi</h3>
+                        <div class="course-item"><span class="time">09:00</span> <span class="name">Pilates</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">18:00</span> <span class="name">Boxe</span> <span class="coach">Chris</span></div>
+                    </div>
+                    <!-- Vendredi -->
+                    <div class="schedule-day" data-day="ven">
+                        <h3>Vendredi</h3>
+                        <div class="course-item"><span class="time">07:00</span> <span class="name">Yoga sunrise</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">12:00</span> <span class="name">Cardio HIIT</span> <span class="coach">Marc</span></div>
+                        <div class="course-item"><span class="time">17:30</span> <span class="name">Cycling</span> <span class="coach">Marc</span></div>
+                    </div>
+                    <!-- Samedi -->
+                    <div class="schedule-day" data-day="sam">
+                        <h3>Samedi</h3>
+                        <div class="course-item"><span class="time">09:00</span> <span class="name">Yoga doux</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">10:30</span> <span class="name">Boxe</span> <span class="coach">Chris</span></div>
+                    </div>
+                    <!-- Dimanche -->
+                    <div class="schedule-day" data-day="dim">
+                        <h3>Dimanche</h3>
+                        <div class="course-item"><span class="time">10:00</span> <span class="name">Pilates</span> <span class="coach">Awa</span></div>
+                        <div class="course-item"><span class="time">16:00</span> <span class="name">Cycling</span> <span class="coach">Marc</span></div>
+                    </div>
+                </div>
+                <div class="schedule-note">
+                    <p>📌 Les cours sont ouverts à tous les niveaux. Réservation obligatoire.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- même footer que index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>Three Sixty Gym</h4><p>Salle premium sur rooftop</p></div>
+                <div class="footer-col"><h4>Horaires</h4><p>Lun-Ven 6h-22h, Sam-Dim 8h-20h</p></div>
+                <div class="footer-col"><h4>Contact</h4><p>📍 Rooftop, Avenue Hôtel<br>📞 +225 01 23 45 67</p></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/22501234567" class="whatsapp-float" target="_blank">💬</a>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

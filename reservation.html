@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver un cours – Three Sixty Gym</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><a href="index.html"><span class="logo-text">THREE SIXTY GYM</span></a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="schedule.html">Planning</a></li>
+                    <li><a href="reservation.html" class="active">Réservation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Réserver une séance</h1>
+                <p>Choisis ton cours, ta date et règle en ligne en toute sécurité</p>
+            </div>
+        </section>
+
+        <section class="reservation-form">
+            <div class="container">
+                <form id="bookingForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="course">📆 Cours *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Sélectionne un cours</option>
+                            <option value="yoga_sunrise">Yoga sunrise (Lun 7h)</option>
+                            <option value="cycling">Cycling (Mer 17h)</option>
+                            <option value="boxe">Boxe (Jeu 18h)</option>
+                            <option value="pilates">Pilates (Sam 9h)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">📅 Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">⏰ Horaire *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">👤 Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">📧 Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">📞 Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group payment-group">
+                        <label>💳 Paiement sécurisé</label>
+                        <div class="payment-methods">
+                            <label><input type="radio" name="payment" value="card" checked> Carte bancaire</label>
+                            <label><input type="radio" name="payment" value="orange"> Orange Money</label>
+                            <label><input type="radio" name="payment" value="mtn"> MTN Mobile Money</label>
+                        </div>
+                        <div class="card-details">
+                            <input type="text" placeholder="Numéro de carte" class="card-input">
+                            <div class="card-row">
+                                <input type="text" placeholder="MM/AA">
+                                <input type="text" placeholder="CVC">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Réserver et payer</button>
+                    </div>
+                    <p class="form-note">🔒 Paiement 100% sécurisé – Réservation confirmée par email.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>Three Sixty Gym</h4><p>Salle premium sur rooftop</p></div>
+                <div class="footer-col"><h4>Horaires</h4><p>Lun-Ven 6h-22h, Sam-Dim 8h-20h</p></div>
+                <div class="footer-col"><h4>Contact</h4><p>📍 Rooftop, Avenue Hôtel<br>📞 +225 01 23 45 67</p></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/22501234567" class="whatsapp-float" target="_blank">💬</a>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
