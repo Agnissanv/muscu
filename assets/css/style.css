@@ -204,7 +204,7 @@ h2::after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('/assets/images/hero-bg.jpeg') center/cover no-repeat;
+    background: url('assets/images/hero-bg.jpeg') center/cover no-repeat;
     background-color: var(--dark-gray); /* fallback */
 }
 
