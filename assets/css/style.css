@@ -374,6 +374,11 @@ h2::after {
 .schedule-table {
     padding: 3rem 0;
 }
+.schedule-table i {
+    color: var(--gold);
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
 
 .schedule-filters {
     display: flex;
@@ -446,6 +451,12 @@ h2::after {
 .reservation-form,
 .contact-form-section {
     padding: 3rem 0;
+}
+
+.reservation-form i{
+    color: var(--gold);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .form-group {
