@@ -269,13 +269,23 @@ h2::after {
     margin-top: 2rem;
 }
 
+.services-intro {
+    max-width: 780px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: var(--off-white);
+    font-size: 1rem;
+}
+
 .service-card {
     background: var(--black);
     padding: 2rem;
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
     transition: var(--transition);
     border: 1px solid rgba(212, 175, 55, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card:hover {
@@ -284,15 +294,77 @@ h2::after {
     box-shadow: var(--shadow);
 }
 
+.service-card .service-badge {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.badge-completed {
+    background: rgba(223, 82, 38, 0.15);
+    color: var(--gold);
+    border-color: rgba(223, 82, 38, 0.35);
+}
+
+.badge-progress {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border-color: rgba(255,255,255,0.15);
+}
+
+.badge-pending {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255,255,255,0.7);
+    border-color: rgba(255,255,255,0.12);
+}
+
 .service-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--gold);
 }
 
 .service-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--gold);
+}
+
+.service-card p {
+    color: var(--off-white);
+    margin-bottom: 1.5rem;
+}
+
+.service-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: var(--gray-text);
+    margin-bottom: 1rem;
+}
+
+.service-meta strong {
+    color: var(--white);
+}
+
+.progress-bar {
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(135deg, var(--gold), #f5e6a3);
 }
 
 /* ---------- GALERIE (ACCUEIL) ---------- */
